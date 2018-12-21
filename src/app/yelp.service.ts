@@ -3,11 +3,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams, HttpResponse } from "@angular/common/http";
 import { catchError, map, tap, retry } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
+import { environment } from '../environments/environment.prod'
 
+const APIKEY = environment.APIKEY
 const httpOptions = {
   headers: new HttpHeaders({
+    "Authorization": APIKEY,
     "Content-Type": "application/json",
-    "Authorization": "Bearer xBl7DcDtVsINtLsjcA13zrX18IAL5nUlMl8uJUhHBy-cnMJidVLNKjPQ65HXJc7Uy1jmnxuHkEwx_7tejQ_NzFZz1eGa2M5wzSZi24q22JgCzI2eIaVZKVT14pcaXHYx"
   })
 }
 
