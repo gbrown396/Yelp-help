@@ -6,6 +6,7 @@ import { Observable, throwError } from 'rxjs';
 import { environment } from '../environments/environment.prod'
 
 const APIKEY = environment.APIKEY
+
 const httpOptions = {
   headers: new HttpHeaders({
     "Authorization": APIKEY,
