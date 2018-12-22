@@ -71,19 +71,19 @@
 <br>
 <br>
         <div *ngIf="restaurants">
-            <img [src]="restaurants?.image_url"/>
+            <img [src]="restaurants?.image_url" style="width: 200px; height: auto;"/>
             <p>{{ restaurants.name }}</p>
             <p>{{ restaurants.display_phone }}</p>
-                <img *ngIf="restaurants.rating === 0" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_0.png"/>
-                <img *ngIf="restaurants.rating === 1" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_1.png"/>
-                <img *ngIf="restaurants.rating === 1.5" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_1_half.png"/>
-                <img *ngIf="restaurants.rating === 2" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_2.png"/>
-                <img *ngIf="restaurants.rating === 2.5" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_2_half.png"/>
-                <img *ngIf="restaurants.rating === 3" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_3.png"/>
-                <img *ngIf="restaurants.rating === 3.5" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_3_half.png"/>
-                <img *ngIf="restaurants.rating === 4" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_4.png"/>
-                <img *ngIf="restaurants.rating === 4.5" src="/Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_4_half.png"/>
-                <img *ngIf="restaurants.rating === 5" src="./Angular-Practice/yelp/src/assets/web_and_ios/extra_large/extra_large_5.png"/>
+                <img *ngIf="restaurants.rating === 0" src="https://i.imgur.com/oP0xNx5.png"/>
+                <img *ngIf="restaurants.rating === 1" src="https://i.imgur.com/TtNuZSB.png"/>
+                <img *ngIf="restaurants.rating === 1.5" src="https://imgur.com/mfEooA6.png"/>
+                <img *ngIf="restaurants.rating === 2" src="https://imgur.com/W4fqJl2.png"/>
+                <img *ngIf="restaurants.rating === 2.5" src="https://imgur.com/a1Dr6L6.png"/>
+                <img *ngIf="restaurants.rating === 3" src="https://imgur.com/WZ5vPJr.png"/>
+                <img *ngIf="restaurants.rating === 3.5" src="https://imgur.com/BLI7mMt.png"/>
+                <img *ngIf="restaurants.rating === 4" src="https://imgur.com/duGw96m.png"/>
+                <img *ngIf="restaurants.rating === 4.5" src="https://imgur.com/NysDEoh.png"/>
+                <img *ngIf="restaurants.rating === 5" src="https://imgur.com/SpaDGVu.png"/>
 
             <p>{{ restaurants.location.display_address }}</p>
         </div>
